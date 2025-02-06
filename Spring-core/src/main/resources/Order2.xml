@@ -11,7 +11,16 @@
     http://www.springframework.org/schema/tx
     http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 
-	<bean id="personBean" class="com.rays.bean.Person">
-		<property name="name" value="niraj chopra" />
+	<context:component-scan
+		base-package="com.rays.ioc" />
+
+	<bean name="payment" class="com.rays.ioc.Payment" />
+
+	<bean name="inventory" class="com.rays.ioc.Inventory" />
+
+	<bean name="order2" class="com.rays.ioc.Order2">
+		<constructor-arg ref="payment" />
+		<constructor-arg ref="inventory" />
 	</bean>
+
 </beans>
