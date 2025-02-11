@@ -2,13 +2,16 @@
 
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+  http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
-	<bean id="userService"
-		class="com.rays.autowire.byconstructor.UserService"
-		autowire="constructor" />
+	<bean id="emailService" class="com.rays.primary.EmailService" primary="true"  />
 
-	<bean id="userDao"
-		class="com.rays.autowire.byconstructor.UserDaoImpl" />
+	<bean id="twitterService" class="com.rays.primary.TwitterService" />
 
+	<bean id="notificationService"
+	class="com.rays.primary.NotificationService" autowire="byType" />
 </beans>
