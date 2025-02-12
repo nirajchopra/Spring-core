@@ -3,6 +3,7 @@ package com.rays.child;
 public class TestBean {
 
 	private String name;
+	
 	private int age;
 
 	public void setName(String name) {
@@ -12,10 +13,9 @@ public class TestBean {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "TestBean [name=" + name +", age" + age + "]";
+		return "TestBean [name=" + name + ", age=" + age + "]";
 	}
-
 }

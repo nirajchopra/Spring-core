@@ -3,14 +3,12 @@ package com.rays.bean;
 public class Person {
 
 	private String name;
-	
+
 	public Person() {
-		
 	}
-	
+
 	public Person(String name) {
 		this.name = name;
-		
 	}
 
 	public String getName() {
@@ -20,5 +18,4 @@ public class Person {
 	public void setName(String name) {
 		this.name = name;
 	}
-
 }

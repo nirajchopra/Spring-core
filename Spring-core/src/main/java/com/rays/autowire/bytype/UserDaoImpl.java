@@ -1,9 +1,9 @@
 package com.rays.autowire.bytype;
 
-public class UserDaoImpl implements UserDao{
-	
+public class UserDaoImpl implements UserDao {
+
 	public void add() {
-		System.out.println("Add Method...!");
+		System.out.println("add method..!!!");
 	}
 
 }

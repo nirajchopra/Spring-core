@@ -7,7 +7,7 @@ public class TestChild {
 
 	public static void main(String[] args) {
 
-		ApplicationContext context = new ClassPathXmlApplicationContext("Child.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("child.xml");
 
 		/*
 		 * TestBean testBean = (TestBean) context.getBean("testBean");
