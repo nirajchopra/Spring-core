@@ -23,21 +23,21 @@ public class TestUserService {
 
 		TestUserService test = (TestUserService) context.getBean("testUserService");
 
-		// test.testAdd();
-		// test.testUpdate();
+//		test.testAdd();
+//		 test.testUpdate();
 		// test.testDelete();
-		// test.testFindByPk();
-		// test.testAuth();
+//		 test.testFindByPk();
+//		 test.testAuth();
 		test.testSearch();
 
 	}
 
 	public void testAdd() {
 		UserDTO dto = new UserDTO();
-		dto.setId(2);
-		dto.setFirstName("xyz");
-		dto.setLastName("xyz");
-		dto.setLogin("admin");
+		dto.setId(4);
+		dto.setFirstName("Niraj");
+		dto.setLastName("Chopra");
+		dto.setLogin("nirajchopra@gmail.com");
 		dto.setPassword("pass1234");
 		long pk = service.add(dto);
 		System.out.println("Data Inserted... pk = " + pk);
@@ -46,9 +46,9 @@ public class TestUserService {
 	public void testUpdate() {
 		UserDTO dto = new UserDTO();
 		dto.setId(1);
-		dto.setFirstName("ABC");
-		dto.setLastName("XYZ");
-		dto.setLogin("ABC@gmail.com");
+		dto.setFirstName("Ritesh");
+		dto.setLastName("Sharma");
+		dto.setLogin("riteshsharma@gmail.com");
 		dto.setPassword("pass1234");
 		service.update(dto);
 		System.out.println("Data updated");
