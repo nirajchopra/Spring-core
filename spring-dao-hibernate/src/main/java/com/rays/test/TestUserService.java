@@ -23,12 +23,12 @@ public class TestUserService {
 
 		TestUserService test = (TestUserService) context.getBean("testUserService");
 
-		// test.testAdd();
+		 test.testAdd();
 		// test.testUpdate();
 		// test.testDelete();
 		// test.testFindByPk();
 		// test.testAuth();
-		test.testSearch();
+//		test.testSearch();
 
 	}
 
